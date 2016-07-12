@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:showIn="@layout/activity_post"
+    tools:context="com.swengroup6.messageboard.fragments.PostActivityFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/postList"
+            android:scrollbars="vertical"
+            android:paddingTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+
+        android:id="@+id/img_notpresnt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_notpresent"
+        android:layout_centerInParent="true"/>
+    <TextView
+
+        android:id="@+id/txt_notpresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Posts present"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/img_notpresnt"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

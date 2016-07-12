@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/card_view"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/discussionImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_people_24dp"/>
+
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/discussion_topicname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/discussionImg"
+                android:paddingRight="20dp"
+                android:paddingLeft="5dp"
+                android:alpha="0.75"
+                android:text="My Programming Lab"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/timeView"
+            android:layout_below="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:alpha="0.57"
+                android:text="Started By"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lastpostime"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:text="17,Sep 10:28pm" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/startname"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:alpha="0.65"
+                android:text="Matthew Stone"
+                android:textColor="#000000"
+                android:layout_toLeftOf="@+id/lastpostname"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lastpostname"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/startname"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:alpha="0.7"
+                android:text="John Doe" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
